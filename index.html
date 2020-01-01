@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Women Who Go Curitiba Form</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Women Who GO - Curitiba</h1>
+        <p id="description" class="description text-center">
+          Obrigada por responder esse formulário e contribuir para o crescimento
+          da comunidade.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="name"
+            class="form-control"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Digite seu email para contato"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Quanto tempo frequenta os eventos?<span class="clue"
+              >(optional)</span
+            ></label
+          >
+          <input
+            type="number"
+            name="frequenta evento"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Frequência de eventos"
+          />
+        </div>
+        <div class="form-group">
+          <p>Melhor opção que descreve seu momento de carreira?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Selecione melhor momento</option>
+            <option value="student">Estudante</option>
+            <option value="jobfull">Desenvolvedora Período Integral</option>
+            <option value="jobpart">Desenvolvedora Meio Período </option>
+            <option value="preferNo">Prefere não comentar</option>
+            <option value="other">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Você recomendaria a comunidade Women Who GO?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Com certeza</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Talvez</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Melhor não</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            O que você gostaria de ver mais na comunidade?
+            <span class="clue">(Pode escolher mais de um)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Projetos Front-end</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Projetos Back-end</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Data</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Desafios</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="talks"
+              type="checkbox"
+              class="input-checkbox"
+            />Talks</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Alguma sugestão?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Pode falar!"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Enviar
+          </button>
+        </div>
+      </form>
+      <footer class="footer">
+        <h4>Teste freeCodeCamp | Amanda Barboza 2020</h4>
+      </footer>
+    </div>
+
+    <script>
+      // coded by @lasjorg
+      // eslint-disable-next-line no-unused-vars
+      const projectName = "survey-form";
+    </script>
+    
+  </body>
+</html>
